@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>College Event Registration</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <span class="navbar-brand mb-0 h1">College Events</span>
+    </div>
+  </nav>
+
+  <!-- Cards Section -->
+  <div class="container mt-5 d-flex justify-content-center gap-4 flex-wrap">
+    
+    <!-- Card 1 -->
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">Tech Fest 2025</h5>
+        <p class="card-text">A grand technology event showcasing student innovations and workshops.</p>
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#registerModal">Register</button>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">Cultural Night</h5>
+        <p class="card-text">A colorful celebration of talent, music, and drama by our students.</p>
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#registerModal">Register</button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        
+        <div class="modal-header">
+          <h5 class="modal-title" id="registerModalLabel">Event Registration</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="nameInput" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="nameInput" placeholder="Enter your name">
+            </div>
+            <div class="mb-3">
+              <label for="emailInput" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="emailInput" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+              <label for="eventSelect" class="form-label">Event Name</label>
+              <select class="form-select" id="eventSelect">
+                <option selected disabled>Choose...</option>
+                <option>Tech Fest 2025</option>
+                <option>Cultural Night</option>
+              </select>
+            </div>
+          </form>
+        </div>
+
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-success">Submit</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center mt-5 py-3 bg-light">
+    © 2025 College Event Registration
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
